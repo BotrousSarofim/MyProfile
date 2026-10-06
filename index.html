@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peter | Software Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0284c7',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(229, 231, 235, 0.8);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #0284c7 0%, #4f46e5 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-sky-500 selection:text-white">
+
+  <header class="sticky top-0 z-50 glass-card border-b border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl shadow-md shadow-sky-500/20">
+          P
+        </div>
+        <span class="font-bold text-xl tracking-tight text-slate-900">Peter</span>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-sky-600 transition-colors">About Me</a>
+        <a href="#skills" class="hover:text-sky-600 transition-colors">Skills</a>
+        <a href="#hobbies" class="hover:text-sky-600 transition-colors">Hobbies & Interests</a>
+        <a href="#contact" class="hover:text-sky-600 transition-colors">Contact</a>
+      </nav>
+      <a href="#contact" class="px-4 py-2 rounded-lg gradient-bg text-white font-medium text-sm shadow-md hover:opacity-95 transition-all">
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <section id="about" class="py-16 md:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200/80 text-sky-700 text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+            <span>Available for New Projects</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-none">
+            Hi, I'm <span class="gradient-text">Peter</span>
+          </h1>
+          <p class="text-xl sm:text-2xl text-slate-600 font-medium leading-relaxed">
+            Software Engineer specializing in cross-platform mobile app development & scalable backend solutions.
+          </p>
+          <p class="text-slate-600 leading-relaxed text-base">
+            I build robust, elegant, and user-friendly software experiences. With a strong passion for object-oriented design and reactive front-end interfaces, I turn ideas into reliable applications across mobile, desktop, and web environments.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4">
+            <a href="#skills" class="px-6 py-3 rounded-xl gradient-bg text-white font-semibold text-sm shadow-lg shadow-sky-500/25 hover:shadow-xl transition-all">
+              Explore Skills
+            </a>
+            <a href="#hobbies" class="px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-all shadow-sm">
+              Discover My Hobbies
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm">
+            <div class="absolute -inset-1 rounded-3xl gradient-bg opacity-30 blur-xl"></div>
+            <div class="relative bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xl space-y-6">
+              <div class="w-24 h-24 rounded-2xl gradient-bg mx-auto flex items-center justify-center text-white text-4xl shadow-lg">
+                <i class="fa-solid me-0 fa-code"></i>
+              </div>
+              <div class="text-center space-y-1">
+                <h3 class="font-bold text-slate-900 text-lg">Peter</h3>
+                <p class="text-slate-500 text-sm">Full-Stack Mobile & Software Engineer</p>
+              </div>
+              <div class="pt-4 border-t border-slate-100 space-y-3">
+                <div class="flex items-center text-xs text-slate-600 space-x-3">
+                  <i class="fa-solid fa-layer-group text-sky-500 w-4 text-center"></i>
+                  <span>Architecture: Clean Architecture & MVC</span>
+                </div>
+                <div class="flex items-center text-xs text-slate-600 space-x-3">
+                  <i class="fa-solid fa-mobile-screen text-sky-500 w-4 text-center"></i>
+                  <span>Mobile: Flutter & Dart Specialist</span>
+                </div>
+                <div class="flex items-center text-xs text-slate-600 space-x-3">
+                  <i class="fa-solid fa-server text-sky-500 w-4 text-center"></i>
+                  <span>Backend: .NET & C# Services</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-slate-100/70 border-y border-slate-200/60">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Technical Expertise</h2>
+          <p class="text-slate-600 mt-2">Core technologies and frameworks I use to build scalable products.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- C# -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl font-bold mb-4">
+                #
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg mb-1">C#</h3>
+              <p class="text-slate-600 text-sm mb-4">Strong foundation in object-oriented programming, asynchronous logic, and enterprise software design.</p>
+            </div>
+            <span class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-semibold w-fit">Core Language</span>
+          </div>
+
+          <!-- .NET -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl font-bold mb-4">
+                <i class="fa-brands fa-microsoft"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg mb-1">.NET Framework & Core</h3>
+              <p class="text-slate-600 text-sm mb-4">Developing high-performance REST APIs, background services, and backend systems.</p>
+            </div>
+            <span class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-semibold w-fit">Backend Framework</span>
+          </div>
+
+          <!-- Flutter -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-500 flex items-center justify-center text-xl font-bold mb-4">
+                <i class="fa-solid fa-feather-pointed"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg mb-1">Flutter</h3>
+              <p class="text-slate-600 text-sm mb-4">Building beautiful, natively compiled cross-platform mobile applications with smooth UI animations.</p>
+            </div>
+            <span class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-semibold w-fit">Mobile Framework</span>
+          </div>
+
+          <!-- Dart -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl font-bold mb-4">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg mb-1">Dart</h3>
+              <p class="text-slate-600 text-sm mb-4">Mastery of reactive programming, async-await flows, and state management techniques in Dart.</p>
+            </div>
+            <span class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-semibold w-fit">Language</span>
+          </div>
+
+          <!-- Hive DB -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl font-bold mb-4">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg mb-1">Hive DB</h3>
+              <p class="text-slate-600 text-sm mb-4">Lightweight and fast key-value local storage database solution tailored for Flutter mobile apps.</p>
+            </div>
+            <span class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-semibold w-fit">NoSQL Database</span>
+          </div>
+
+          <!-- EF Core -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl font-bold mb-4">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg mb-1">Entity Framework Core</h3>
+              <p class="text-slate-600 text-sm mb-4">ORM data modeling, LINQ queries, and efficient database migrations for relational databases.</p>
+            </div>
+            <span class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-semibold w-fit">ORM & Data</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Hobbies & Favorite Activities</h2>
+        <p class="text-slate-600 mt-2">What inspires me outside of daily engineering work.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Hobby 1 -->
+        <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm card-hover flex flex-col">
+          <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+            <span class="text-xs uppercase font-bold tracking-wider text-sky-400">Creation</span>
+            <i class="fa-solid fa-laptop-code text-2xl text-sky-400"></i>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-bold text-slate-900 text-xl mb-2">Mobile & App Development</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Building mobile applications is not just my career—it is my passion. I love experimenting with new app architectures, creative UI patterns, and building side projects from scratch.
+              </p>
+              </div>
+            <div class="flex items-center text-xs text-sky-600 font-semibold space-x-1">
+              <span>Personal Projects</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+            <a href="https://sehty-peter.web.app/">Visit Sehty Application</a>
+          </div>
+        </div>
+
+        <!-- Hobby 2 -->
+        <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm card-hover flex flex-col">
+          <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+            <span class="text-xs uppercase font-bold tracking-wider text-indigo-400">Innovation</span>
+            <i class="fa-solid fa-compass text-2xl text-indigo-400"></i>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-bold text-slate-900 text-xl mb-2">Exploring New Tech</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Fascinated by emerging technologies, modern tools, and emerging frameworks. I continuously dedicate time to research innovations and modern architectural paradigms.
+              </p>
+            </div>
+            <div class="flex items-center text-xs text-indigo-600 font-semibold space-x-1">
+              <span>Lifelong Learning</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobby 3 -->
+        <div class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm card-hover flex flex-col">
+          <div class="p-6 bg-slate-900 text-white flex justify-between items-center">
+            <span class="text-xs uppercase font-bold tracking-wider text-emerald-400">Communication</span>
+            <i class="fa-solid fa-language text-2xl text-emerald-400"></i>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h3 class="font-bold text-slate-900 text-xl mb-2">Multilingual Translation</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Passionate about foreign languages and linguistics. Exploring nuances across languages through translation exercises helps sharpen clear communication skills.
+              </p>
+            </div>
+            <div class="flex items-center text-xs text-emerald-600 font-semibold space-x-1">
+              <span>Linguistic Passion</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-slate-900 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Let's Work Together</h2>
+        <p class="text-slate-400 text-base sm:text-lg max-w-xl mx-auto">
+          Whether you have an mobile app idea, backend system need, or language collaboration project, feel free to reach out.
+        </p>
+        <div id="contactMessage" class="hidden max-w-md mx-auto p-4 rounded-xl bg-emerald-500/20 text-emerald-300 text-sm border border-emerald-500/30">
+          Thank you! Your message has been received.
+        </div>
+        <form id="portfolioForm" onsubmit="handleContactSubmit(event)" class="max-w-md mx-auto space-y-4">
+          <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+          <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+          <textarea rows="3" placeholder="Your Message" required class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors text-sm resize-none"></textarea>
+          <button type="submit" class="w-full py-3.5 rounded-xl gradient-bg text-white font-semibold text-sm shadow-lg hover:opacity-95 transition-all">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-slate-500 text-xs">
+    <div class="max-w-6xl mx-auto px-4">
+      <p>&copy; <span id="year"></span> Peter. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const messageBox = document.getElementById('contactMessage');
+      const form = document.getElementById('portfolioForm');
+      
+      messageBox.classList.remove('hidden');
+      form.reset();
+      
+      setTimeout(() => {
+        messageBox.classList.add('hidden');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
